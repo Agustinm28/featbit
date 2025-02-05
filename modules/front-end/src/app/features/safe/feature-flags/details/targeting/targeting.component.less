@@ -46,7 +46,7 @@
         i {
           margin-right: 6px;
           font-size: 16px;
-          color: @yellow55-color;
+          color: var(--yellow55-color);
         }
       }
 
@@ -56,8 +56,8 @@
 
         .pending-changes {
           cursor: pointer;
-          background-color: @white;
-          border: 1px solid @grey30-color;
+          background-color: var(--white);
+          border: 1px solid var(--grey30-color);
           padding: 0 10px;
           border-radius: 8px;
           display: flex;
@@ -69,7 +69,7 @@
           }
 
           &:hover {
-            background-color: @grey30-color;
+            background-color: var(--grey30-color);
           }
         }
 
@@ -86,7 +86,7 @@
         .more-action {
           line-height: 40px;
           border: none;
-          background-color: @grey50-color;
+          background-color: var(--grey50-color);
           width: 40px;
           height: 40px;
           color: white;
@@ -128,7 +128,7 @@
           font-weight: 600;
           font-size: 16px;
           line-height: 150%;
-          color: @grey70-color;
+          color: var(--grey70-color);
         }
       }
 
@@ -152,17 +152,17 @@
           cursor: pointer;
           margin-left: 12px;
           font-size: 20px;
-          color: @grey50-color;
+          color: var(--grey50-color);
 
           &:hover {
-            color: @grey70-color;
+            color: var(--grey70-color);
           }
         }
       }
 
       .rule {
         &.validation-error {
-          border: 2px solid @red50-color;
+          border: 2px solid var(--red50-color);
           border-radius: 20px;
         }
 
@@ -215,6 +215,6 @@
 ::ng-deep .target-more-actions {
   .ant-dropdown-menu-item.disabled {
     cursor: not-allowed;
-    color: @grey50-color;
+    color: var(--grey50-color);
   }
 }

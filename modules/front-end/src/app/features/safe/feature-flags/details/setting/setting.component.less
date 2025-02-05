@@ -1,12 +1,12 @@
 @import "variables";
 
 .archived {
-  background-image: repeating-linear-gradient(45deg, white, white 20px, @grey5-color 20px, @grey5-color 40px);
+  background-image: repeating-linear-gradient(45deg, white, white 20px, var(--grey5-color) 20px, var(--grey5-color) 40px);
 
   .warning-icon {
     font-size: 20px;
     margin-right: 8px;
-    color: @red50-color;
+    color: var(--red50-color);
   }
 
   .content {
@@ -19,7 +19,7 @@
     }
 
     .delete {
-      color: @red50-color;
+      color: var(--red50-color);
       text-decoration: underline;
       font-weight: bold;
     }
@@ -32,7 +32,7 @@
   }
 
   padding: 15px 24px 15px 24px;
-  background-color: @grey5-color;
+  background-color: var(--grey5-color);
   border-radius: 20px;
   min-height: 50px;
 
@@ -56,7 +56,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
-    color: @grey70-color;
+    color: var(--grey70-color);
     height: 30px;
     gap: 8px;
 
@@ -129,8 +129,8 @@
 
   .flag-description {
     margin-top: 4px;
-    color: @grey50-color;
-    border: 1px solid @grey20-color;
+    color: var(--grey50-color);
+    border: 1px solid var(--grey20-color);
     border-radius: 8px;
     padding: 5px;
 
@@ -158,15 +158,15 @@
       flex-wrap: wrap;
       gap: 0;
       row-gap: 4px;
-      border: 1px solid @grey20-color;
-      background-color: #ffffff;
+      border: 1px solid var(--grey20-color);
+      background-color: var(--background-color)f;
       padding: 5px;
       box-sizing: border-box;
       border-radius: 8px;
       margin-bottom: 12px;
 
       nz-tag {
-        background: @grey20-color;
+        background: var(--grey20-color);
         border-radius: 4px;
         padding: 2px 4px 2px 5px;
         line-height: 15px;
@@ -289,20 +289,20 @@
     }
 
     .save-btn {
-      border: 1px solid @green60-color;
-      color: @green60-color;
+      border: 1px solid var(--green60-color);
+      color: var(--green60-color);
 
       &:hover {
-        background-color: @green10-color;
+        background-color: var(--green10-color);
       }
     }
 
     .cancel-btn {
-      color: @grey50-color;
-      border: 1px solid @grey40-color;
+      color: var(--grey50-color);
+      border: 1px solid var(--grey40-color);
 
       &:hover {
-        background-color: @grey10-color;
+        background-color: var(--grey10-color);
       }
     }
   }
@@ -331,12 +331,12 @@
       align-items: center;
       button {
         border: none;
-        background: @purple50-color;
+        background: var(--purple50-color);
         border-radius: 8px;
         width: 120px;
         height: 37px;
         padding: 8px 12px;
-        color: #FFFFFF;
+        color: #b13737;
         margin-bottom: 10px;
         cursor: pointer;
       }
@@ -344,9 +344,9 @@
   }
 
   i:not(.warning-icon) {
-    color: @grey50-color;
+    color: var(--grey50-color);
     &:hover {
-      color: @grey70-color;
+      color: var(--grey70-color);
     }
   }
 }
@@ -374,14 +374,14 @@
     font-weight: 500;
     padding: 10px;
     border: 1px solid #d2d2d2;
-    border-left: 3px solid @yellow5-color;
+    border-left: 3px solid var(--yellow5-color);
     border-radius: 10px;
 
     .warning {
       display: flex;
 
       .warning-icon {
-        color: @yellow5-color;
+        color: var(--yellow5-color);
       }
       .warning-content {
         padding-left: 5px;
@@ -406,15 +406,15 @@
         margin-right: 12px;
 
         &.ongoing {
-          background-color: @green60-color;
+          background-color: var(--green60-color);
         }
 
         &.paused {
-          background-color: @red50-color;
+          background-color: var(--red50-color);
         }
 
         &.not-started {
-          background-color: @blue50-color;
+          background-color: var(--blue50-color);
         }
       }
     }
@@ -438,7 +438,7 @@
 
   .variation-wrapper {
     border-radius: 10px;
-    border: 1px solid @grey0-color;
+    border: 1px solid var(--grey0-color);
     padding: 12px 12px 0 12px;
 
     display: flex;

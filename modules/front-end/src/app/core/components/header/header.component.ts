@@ -37,6 +37,7 @@ export class HeaderComponent implements OnInit {
   selectedProject: IProject;
   selectedEnv: IEnvironment;
   envModalVisible: boolean = false;
+  darkMode: boolean = false;
 
   breadcrumbs$: Observable<Breadcrumb[]>;
 
@@ -71,6 +72,10 @@ export class HeaderComponent implements OnInit {
     this.messageQueueService.subscribe(this.messageQueueService.topics.CURRENT_ENV_SECRETS_CHANGED, () => {
       this.setCurrentEnv();
     });
+
+    const storedTheme = localStorage.getItem('theme');
+    this.darkMode = storedTheme === 'dark';
+    this.applyTheme();
   }
 
   isCurrentProject(project: IProject): boolean {
@@ -92,6 +97,20 @@ export class HeaderComponent implements OnInit {
     }
 
     return project.environments;
+  }
+
+  darkModeChange() {
+    this.darkMode = !this.darkMode;
+    this.flags['dark-mode'] = this.darkMode;
+    console.log(this.flags);
+
+    document.documentElement.setAttribute('data-theme', this.darkMode ? 'dark' : 'light');
+    // 🔹 Guarda la preferencia del usuario en `localStorage`
+    localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
+  }
+
+  applyTheme() {
+    document.documentElement.setAttribute('data-theme', this.darkMode ? 'dark' : 'light');
   }
 
   envModelCancel() {

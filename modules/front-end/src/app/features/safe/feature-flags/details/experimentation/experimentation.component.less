@@ -55,7 +55,7 @@
         }
 
         &.active {
-          border: 2px solid @yellow55-color;
+          border: 2px solid var(--yellow55-color);
         }
       }
 
@@ -68,7 +68,7 @@
 
         &.experiment {
           .table-th-style th {
-            background-color: #dddceb;
+            background-color: var(--ant-menu-item-dim);
           }
           .head {
             .first-line {
@@ -111,7 +111,7 @@
                     display: flex;
 
                     .warning-icon {
-                      color: @yellow5-color;
+                      color: var(--yellow5-color);
                     }
                     .warning-content {
                       padding-left: 5px;
@@ -129,14 +129,14 @@
 
                   &.paused {
                     line-height: 24px;
-                    border: 1px solid @red50-color;
-                    background: @red10-color;
-                    color: @red50-color;
+                    border: 1px solid var(--red50-color);
+                    background: var(--red10-color);
+                    color: var(--red50-color);
                   }
 
                   &.on-going {
                     border: 1px solid #61d4aa;
-                    background: #ffffff;
+                    background: var(--background-color)f;
                     color: #61d4aa;
                   }
 
@@ -165,7 +165,7 @@
                   color: #8edaba;
                 }
                 &.paused {
-                  color: @red50-color;
+                  color: var(--red50-color);
                 }
                 &.not-started {
                   color: rgba(0, 0, 0, 0.85);
@@ -186,7 +186,7 @@
           }
           .empty-experiment {
             margin-top: 20px;
-            background-color: @grey50-color;
+            background-color: var(--grey50-color);
             height: 200px;
             padding-top: 90px;
             text-align: center;
@@ -230,7 +230,7 @@
         text-align: left;
       }
       .baseline_cell {
-        background-color: #f8f8f8;
+        background-color: var(--baseline-cell);
         text-align: center;
       }
 

@@ -8,7 +8,7 @@
 }
 
 .table-header th {
-  background-color: #DDDCEB;
+  background-color: var(--table-background-color);
 }
 
 .row-operations {
@@ -36,7 +36,7 @@
     label {
       font-size: 14px;
       line-height: 150%;
-      color: @grey70-color;
+      color: var(--grey70-color);
       display: inline-block;
       margin-bottom: 8px;
     }
@@ -59,8 +59,8 @@
   overflow: auto;
   overflow-x: hidden;
   margin-bottom: 16px;
-  border: 1px solid @grey20-color;
-  background-color: #ffffff;
+  border: 1px solid var(--grey20-color);
+  background-color: var(--background-color)f;
   border-radius: 8px;
 }
 
@@ -87,7 +87,7 @@
     align-items: center;
     border-radius: 4px;
     padding: 4px 4px 4px 6px;
-    background: @grey20-color;
+    background: var(--grey20-color);
 
     .value-item {
       width: 280px;
@@ -105,7 +105,7 @@
     button {
       border: 0;
 
-      background-color: @grey20-color;
+      background-color: var(--grey20-color);
 
       i {
         font-size: 13px;
@@ -123,7 +123,7 @@
     position: relative;
     top: 1.5px;
     font-size: 16px;
-    color: @red50-color;
+    color: var(--red50-color);
     margin-left: 3px;
   }
 }

@@ -19,9 +19,9 @@
     .annotation {
       display: flex;
       justify-content: space-between;
-      border: 1px solid @grey20-color;
+      border: 1px solid var(--grey20-color);
       border-radius: 12px;
-      background: #FFFFFF;
+      background: var(--background-color)F;
 
       font-weight: 400;
       font-size: 16px;
@@ -32,7 +32,7 @@
       padding: 24px;
 
       .legend {
-        color: @grey70-color;
+        color: var(--grey70-color);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -63,11 +63,11 @@
   }
 
   .ant-tag {
-    background: @grey10-color;
+    background: var(--grey10-color);
     border-radius: 4px;
     font-size: 12px;
     line-height: 150%;
-    color: @grey70-color;
+    color: var(--grey70-color);
     display: inline-block;
     margin-right: 8px;
     white-space: nowrap;
@@ -88,15 +88,15 @@
       margin-right: 12px;
 
       &.ongoing {
-        background-color: @green60-color;
+        background-color: var(--green60-color);
       }
 
       &.paused {
-        background-color: @red50-color;
+        background-color: var(--red50-color);
       }
 
       &.not-started {
-        background-color: @blue50-color;
+        background-color: var(--blue50-color);
       }
     }
   }
